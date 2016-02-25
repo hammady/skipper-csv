@@ -1,4 +1,4 @@
-# [<img title="skipper-csv - CSV Parser adapter for Skipper" src="http://i.imgur.com/P6gptnI.png" width="200px" alt="skipper emblem - face of a ship's captain"/>](https://github.com/hammady/skipper-disk) Disk Blob Adapter
+# [<img title="skipper-csv - CSV Parser adapter for Skipper" src="http://i.imgur.com/P6gptnI.png" width="200px" alt="skipper emblem - face of a ship's captain"/>](https://github.com/hammady/skipper-disk) CSV Parser Adapter 
 
 [![NPM version](https://badge.fury.io/js/skipper-csv.png)](http://badge.fury.io/js/skipper-csv) &nbsp; &nbsp;
 [![Build Status](https://travis-ci.org/hammady/skipper-csv.svg?branch=master)](https://travis-ci.org/hammady/skipper-csv)
@@ -41,7 +41,7 @@ $ npm test
 **[MIT](./LICENSE)**
 &copy; 2016
 
-[Hossam Hammady](http://twitter.com/hammady)
+[Hossam Hammady](http://twitter.com/hammady) - 
 [Qatar Computing Research Institute, Qatar Foundation](http://qcri.qa)
 
 See `LICENSE.md`.
