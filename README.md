@@ -12,7 +12,7 @@ You also pass `rowHandler` function in the options that will be called for every
 See example usage below.
 
 ## Acknowledgement
-This module is an adaptation of [skipper-disk](skipper-disk) module. Much of the code is borrowed from there.
+This module is an adaptation of [skipper-disk](http://www.github.com/balderdashy/skipper-disk) module. Much of the code is borrowed from there.
 
 ## Installation
 
@@ -26,8 +26,31 @@ If you're using this module with Express, Connect, Kraken, or a vanilla Node.js 
 
 ## Usage
 
+### Basic example
+
 ```
+    var adapter = require('skipper-csv')();
+    var receiving = adapter.receive({
+      csvOptions: {delimiter: ',', columns: true},
+      rowHandler: function(row, fd){
+        console.log(row, fd);
+      }
+    });
+
+    req.file('files').upload(receiving, function (err, files) {
+      if (err)
+        return res.serverError(err);
+
+      return res.json({
+        message: "Uploaded " + files.length + " CSV files!",
+        files: files
+      });
+
+    });
+
 ```
+
+## Testing
 
 To run the tests:
 
@@ -41,8 +64,13 @@ $ npm test
 **[MIT](./LICENSE)**
 &copy; 2016
 
-[Hossam Hammady](http://twitter.com/hammady) - 
-[Qatar Computing Research Institute, Qatar Foundation](http://qcri.qa)
+[Hossam Hammady](http://twitter.com/hammady)
+
+[Data Analytics](http://da.qcri.org) group
+
+[Qatar Computing Research Institute](http://qcri.qa)
+
+member of [Qatar Foundation](http://qcri.qa)
 
 See `LICENSE.md`.
 
