@@ -29,15 +29,13 @@ If you're using this module with Express, Connect, Kraken, or a vanilla Node.js 
 ### Basic example
 
 ```
-    var adapter = require('skipper-csv')();
-    var receiving = adapter.receive({
+    req.file('files').upload({
+      adapter: require('skipper-csv'),
       csvOptions: {delimiter: ',', columns: true},
       rowHandler: function(row, fd){
-        console.log(row, fd);
+        console.log(fd, row);
       }
-    });
-
-    req.file('files').upload(receiving, function (err, files) {
+    }, function (err, files) {
       if (err)
         return res.serverError(err);
 
