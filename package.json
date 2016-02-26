@@ -1,4 +1,7 @@
 {
+  "name": "skipper-csv",
+  "version": "0.0.1",
+  "description": "Stream transform Skipper's file uploads to a CSV parser",
   "author": "Hossam Hammady <npmjs@hammady.net>",
   "bugs": {
     "url": "https://github.com/hammady/skipper-csv/issues"
@@ -10,14 +13,8 @@
     "node-uuid": "~1.4.1",
     "csv-parse": "^1.0.2"
   },
-  "description": "Stream transform Skipper's file uploads to a CSV parser",
   "devDependencies": {
     "skipper-adapter-tests": "~1.5.2"
-  },
-  "directories": {},
-  "dist": {
-    "shasum": "TODO",
-    "tarball": "http://registry.npmjs.org/skipper-csv/-/skipper-csv-0.0.1.tgz"
   },
   "homepage": "https://github.com/hammady/skipper-csv",
   "keywords": [
@@ -31,17 +28,11 @@
   ],
   "license": "MIT",
   "main": "index.js",
-  "maintainers": [
-    "Hossam Hammady <npmjs@hammady.net>"
-  ],
-  "name": "skipper-csv",
-  "optionalDependencies": {},
   "repository": {
     "type": "git",
     "url": "git://github.com/hammady/skipper-csv.git"
   },
   "scripts": {
     "test": "node -e \"require('skipper-adapter-tests')({module: require('./')});\""
-  },
-  "version": "0.0.1"
+  }
 }
