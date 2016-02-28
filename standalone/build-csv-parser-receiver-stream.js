@@ -61,7 +61,7 @@ module.exports = function buildCSVParserReceiverStream(options, adapter) {
     });
     outs__.on('readable', function() {
       while(record = outs__.read()){
-        options.rowHandler(record, __newFile.fd);
+        options.rowHandler(record, __newFile.fd, __newFile);
       }
     })
 
