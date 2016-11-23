@@ -7,11 +7,11 @@
     "url": "https://github.com/hammady/skipper-csv/issues"
   },
   "dependencies": {
+    "csv-parse": "^1.0.2",
     "debug": "^2.1.1",
     "fs-extra": "~0.8.1",
     "lodash": "~2.4.1",
-    "node-uuid": "~1.4.1",
-    "csv-parse": "^1.0.2"
+    "uuid": "^3.0.0"
   },
   "devDependencies": {
     "skipper-adapter-tests": "~1.5.2"
